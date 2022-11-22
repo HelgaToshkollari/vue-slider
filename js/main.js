@@ -48,6 +48,9 @@ const app = createApp({
             }else{
                 this.imgIndex++;
             }
+        },
+        thumbClick( thumbIndex ){
+           this.imgIndex = thumbIndex
         }
 
     },
