@@ -1,5 +1,5 @@
 const { createApp } = Vue;
-createApp({
+const app = createApp({
     data (){
         return{
             imgIndex: 0,
@@ -32,5 +32,5 @@ createApp({
             ],
         }
     },
-});
+}).mount("#app")
 
