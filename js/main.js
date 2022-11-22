@@ -32,5 +32,24 @@ const app = createApp({
             ],
         }
     },
+    methods: {
+        btnPrev(){
+            if ( this.imgIndex === 0){
+                this.imgIndex = this.slides.length - 1;
+
+            }else{
+                this.imgIndex--;
+            }
+        },
+        btnNext(){
+            if ( this.imgIndex === this.slides.length - 1){
+                this.imgIndex = 0;
+
+            }else{
+                this.imgIndex++;
+            }
+        }
+
+    },
 }).mount("#app")
 
